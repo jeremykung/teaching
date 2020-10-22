@@ -5,6 +5,11 @@ font-family: 'PT Serif', serif;
 font-family: 'Quicksand', sans-serif;
 */
 
+:root {
+  --primary-color: rgb(66, 197, 230);
+  --secondary-color: rgb(44, 172, 204);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,11 +27,13 @@ body {
   align-items: center;
   height: 100vh;
   color: rgb(165, 165, 165);
+  opacity: 1;
+  transition: 2s;
 }
 
 .quote-wrapper {
   font-family: 'PT Serif', serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 4%;
   margin-bottom: 10%;
@@ -36,11 +43,12 @@ body {
 }
 
 #quote-name {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
 .enter-container > p {
+  font-size: 1.2rem;
   font-weight: 500;
   margin: 0.4rem 0;
 }
@@ -49,14 +57,21 @@ body {
   border: none;
   background-color: white;
   font-family: 'Quicksand', sans-serif;
-  padding: 0.5rem 3.4rem;
+  font-size: 1.4rem;
+  padding: 0.5em 3.4em;
   transition: 1s;
   color: rgb(182, 182, 182);
   border-radius: 4px;
 }
 
 .enter-container > button:hover {
-  background-color: rgb(59, 128, 59);
+  background-color: var(--primary-color);
   box-sizing: border-box;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .quote-wrapper {font-size: 1.2rem;}
+
 }
