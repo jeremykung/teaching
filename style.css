@@ -6,8 +6,10 @@ font-family: 'Quicksand', sans-serif;
 */
 
 :root {
-  --primary-color: rgb(66, 197, 230);
-  --secondary-color: rgb(44, 172, 204);
+  --primary-color: rgb(20, 139, 168);
+  --secondary-color: rgb(66, 197, 230);
+  --dark-grey: rgb(61, 61, 61);
+  --light-grey: rgb(158, 158, 158)
 }
 
 * {
@@ -17,8 +19,14 @@ font-family: 'Quicksand', sans-serif;
 
 body {
   font-family: 'Quicksand', sans-serif;
+  color: var(--light-grey);
 }
 
+a {text-decoration: none;}
+
+/*******************************
+           INDEX PAGE 
+********************************/
 
 .enter-container {
   display: flex;
@@ -29,22 +37,6 @@ body {
   color: rgb(165, 165, 165);
   opacity: 1;
   transition: 2s;
-}
-
-.quote-wrapper {
-  font-family: 'PT Serif', serif;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  width: 60vw;
-  color: rgb(61, 61, 61);
-  transition: 1s;
-}
-
-#quote-name {
-  font-size: 1rem;
-  font-style: italic;
 }
 
 .enter-container > p {
@@ -70,8 +62,90 @@ body {
   color: white;
 }
 
+#quote-name {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.quote-wrapper {
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  width: 60vw;
+  color: var(--dark-grey);
+  opacity: 0;
+  transition: 2s;
+}
+
+/* .quote-wrapper > span {
+  opacity: 0;
+  transition: 3s;
+} */
+
 @media only screen and (max-width: 768px) {
 
   .quote-wrapper {font-size: 1.2rem;}
+
+}
+
+/*******************************
+           MAIN PAGE 
+********************************/
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* background-color: var(--secondary-color); */
+  margin-top: 5%;
+}
+
+nav > a {
+  color: var(--light-grey);
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  /* transition: 0.2s; */
+}
+
+nav > a:hover {
+  /* color: var(--secondary-color); */
+  /* outline: 1px solid var(--primary-color); */
+  /* font-weight: bold; */
+  background-color: var(--primary-color);
+  color: white;
+  transition: 0.3s;
+}
+
+.current-page {
+  font-weight: bolder;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#mobile-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
+.show-menu {
+  height: 92vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #mobile-menu {display: flex;}
+
+  nav {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+  }
 
 }
