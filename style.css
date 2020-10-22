@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'PT Serif', serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.enter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(165, 165, 165);
+}
+
+.quote-wrapper {
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  width: 60vw;
+  color: rgb(61, 61, 61);
+  transition: 1s;
+}
+
+#quote-name {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.enter-container > p {
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+
+.enter-container > button {
+  border: none;
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem 3.4rem;
+  transition: 1s;
+  color: rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+.enter-container > button:hover {
+  background-color: rgb(59, 128, 59);
+  box-sizing: border-box;
+  color: white;
+}
