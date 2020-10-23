@@ -31,4 +31,3 @@ const loadQuote = () => {
 const menuToggle = () => {
   document.getElementById('main-menu').classList.toggle('show-menu')
 }
-

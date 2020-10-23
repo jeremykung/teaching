@@ -105,6 +105,7 @@ nav > a {
   color: var(--light-grey);
   font-size: 1.2rem;
   padding: 1.5rem 2rem;
+  margin: 0 0.5rem;
   border-radius: 4px;
   /* transition: 0.2s; */
 }
@@ -119,7 +120,7 @@ nav > a:hover {
 }
 
 .current-page {
-  font-weight: bolder;
+  /* font-weight: bolder; */
   background-color: var(--primary-color);
   color: white;
 }
@@ -149,3 +150,63 @@ nav > a:hover {
   }
 
 }
+
+/*******************************
+          PROJECTS PAGE 
+********************************/
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.projects-container > div {
+  height: 300px;
+  width: 400px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.5; */
+  /* transition: 0.5s; */
+}
+
+/* .projects-container > div:hover {opacity: 1;} */
+
+/* #project1:hover {background-image: url("https://images.unsplash.com/photo-1547638375-ebf04735d792?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");}
+
+#project2:hover {background-image: url("https://images.unsplash.com/photo-1586256053828-a36b572ab01d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");} */
+
+.project-item > img {
+  /* position: absolute; */
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.project-item > img:hover {
+  opacity: 1;
+}
+
+.project-item > img:hover + .project-item > div {
+  transform: scale(1.2);
+}
+
+.project-item > div {
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Trying to make it so hovering over the item enlarges only the text div */
