@@ -28,6 +28,7 @@ const loadQuote = () => {
 //            MAIN PAGE              //
 ///////////////////////////////////////
 
+// Toggle Mobile Menu
 const menuToggle = () => {
   document.getElementById('main-menu').classList.toggle('show-menu')
 }

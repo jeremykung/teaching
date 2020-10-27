@@ -57,7 +57,7 @@ a {text-decoration: none;}
 }
 
 .enter-container > button:hover {
-  background-color: var(--primary-color);
+  background-color: rgb(35, 100, 35);
   box-sizing: border-box;
   color: white;
 }
@@ -97,8 +97,7 @@ a {text-decoration: none;}
 nav {
   display: flex;
   justify-content: center;
-  /* background-color: var(--secondary-color); */
-  margin-top: 5%;
+  margin: 3rem;
 }
 
 nav > a {
@@ -107,22 +106,15 @@ nav > a {
   padding: 1.5rem 2rem;
   margin: 0 0.5rem;
   border-radius: 4px;
-  /* transition: 0.2s; */
-}
-
-nav > a:hover {
-  /* color: var(--secondary-color); */
-  /* outline: 1px solid var(--primary-color); */
-  /* font-weight: bold; */
-  background-color: var(--primary-color);
-  color: white;
   transition: 0.3s;
 }
 
+nav > a:hover {
+  color: rgb(71, 71, 71);
+}
+
 .current-page {
-  /* font-weight: bolder; */
-  background-color: var(--primary-color);
-  color: white;
+  /* color: var(--primary-color) */
 }
 
 #mobile-menu {
@@ -133,7 +125,7 @@ nav > a:hover {
 }
 
 .show-menu {
-  height: 92vh;
+  height: 80vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,9 +136,10 @@ nav > a:hover {
     flex-direction: column;
     height: 0;
     overflow: hidden;
-    margin-top: 0;
+    margin: 0;
     text-align: center;
     justify-content: center;
+    transition: 0.3s;
   }
 
 }
@@ -158,19 +151,18 @@ nav > a:hover {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 3rem auto;
+  justify-content: space-between;
 }
 
-.projects-container > div {
+.projects-container > a {
   height: 300px;
-  width: 400px;
-  margin: 1rem;
+  /* width: 400px; */
+  /* margin: 1rem 5px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(37, 37, 37);
   color: white;
   background-size: cover;
   background-position: center;
@@ -178,11 +170,14 @@ nav > a:hover {
   /* transition: 0.5s; */
 }
 
-/* .projects-container > div:hover {opacity: 1;} */
-
-/* #project1:hover {background-image: url("https://images.unsplash.com/photo-1547638375-ebf04735d792?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");}
-
-#project2:hover {background-image: url("https://images.unsplash.com/photo-1586256053828-a36b572ab01d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");} */
+#project1 {width: 50%;}
+#project2 {width: 50%;}
+#project3 {width: 50%;}
+#project4 {width: 50%;}
+#project5 {width: 50%;}
+#project6 {width: 50%;}
+#project7 {width: 50%;}
+#project8 {width: 50%;}
 
 .project-item > img {
   /* position: absolute; */
@@ -194,13 +189,10 @@ nav > a:hover {
   transition: 0.5s;
 }
 
-.project-item > img:hover {
-  opacity: 1;
-}
+.project-item > img:hover {opacity: 0.8;}
 
-.project-item > img:hover + .project-item > div {
-  transform: scale(1.2);
-}
+.project-title-box {transition: 0.5s;}
+.project-item > img:hover + .project-title-box {transform: scale(1.4);}
 
 .project-item > div {
   position: absolute; 
@@ -209,4 +201,10 @@ nav > a:hover {
   align-items: center;
 }
 
-/* Trying to make it so hovering over the item enlarges only the text div */
+@media only screen and (max-width: 1080px) {
+
+  #project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8 {
+    width: 100%;
+  }
+
+}
