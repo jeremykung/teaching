@@ -208,3 +208,101 @@ nav > a:hover {
   }
 
 }
+
+/*******************************
+         PROJECT DETAILS 
+********************************/
+
+.project-container {
+  display: flex;
+  background-color: rgb(41, 97, 4);
+  /* padding: 3rem; */
+  /* justify-content: center; */
+}
+
+.project-image-wrapper {
+  width: 40%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%; 
+  height: 70vh;
+  /* opacity: 0.5; */
+  transition: 1s;
+}
+
+.project-container:hover .project-image {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.project-text {
+  width: 60%;
+  padding: 1rem 3rem;
+  color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-text > h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.project-text > h3 {
+  margin: 2rem 0 1rem 0
+}
+
+.project-gallery-header {
+  margin: 5%;
+  text-align: center;
+  color: rgb(43, 43, 43);
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+}
+
+.project-gallery > img {
+  object-fit: cover;
+  height: 300px;
+  margin: 1rem;
+  /* opacity: 0.5;
+  transition: 0.3s; */
+}
+
+/* .project-gallery > img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+} */
+
+@media only screen and (max-width: 1080px) {
+
+  .project-image-wrapper {
+    width: 100%;
+  }
+
+  .project-image {
+    opacity: 1;
+  }
+  
+  .project-container {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .project-text {
+    width: 100%;
+    margin: 3rem;
+    padding: 0;
+  }
+
+}
