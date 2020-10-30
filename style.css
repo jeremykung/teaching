@@ -175,9 +175,18 @@ nav > div > a {
     overflow: hidden;
     margin: 0;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     transition: 0.3s;
   }
+
+  nav > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .nav-right {order: 1}
+  .nav-left {order: 2;}
 
 }
 
