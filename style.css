@@ -641,6 +641,8 @@ nav > div > a {
 
 .show-cv {display: none;}
 
+#button-cv {display: none;}
+
 @media only screen and (max-width: 1600px) {
 
 .about-container {
@@ -657,6 +659,14 @@ nav > div > a {
     flex-direction: row;
   }
 
+  .bio > img {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .bio > p {
+    margin: 0 2rem 0 0;
+  }
+
   .show-cv {
     display: block;
     display: flex;
@@ -668,6 +678,32 @@ nav > div > a {
     color: rgb(100, 100, 100);
     font-style: italic;
     font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .bio {
+    flex-direction: column;
+  }
+
+  .bio > p {margin: 3rem 0;}
+
+  #pdf-cv {display: none;}
+  .show-cv {display: none;}
+
+  #button-cv {
+    display: block;
+    border: none;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+    padding: 0.5em 3.4em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 71, 23);
+    border-radius: 4px;
   }
 
 }
