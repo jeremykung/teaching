@@ -267,6 +267,22 @@ nav > div > a {
           PROJECTS PAGE 
 ********************************/
 
+.projects-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  text-align: center;
+  /* background-color: rgb(10, 59, 10); */
+  /* color: white; */
+}
+
+.projects-header > p {
+  margin: 1rem 0;
+  width: 70%;
+}
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
