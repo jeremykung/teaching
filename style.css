@@ -548,4 +548,8 @@ nav > div > a {
     margin: 2rem;
   }
 
+  .philosophy-quote {
+    opacity: 1;
+  }
+
 }
