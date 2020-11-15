@@ -464,3 +464,88 @@ nav > div > a {
   }
 
 }
+
+/*******************************
+           PHILOSOPHY 
+********************************/
+
+.philosophy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+#philosophy-video {
+  width: 35%;
+  margin-right: 3rem;
+}
+
+#philosophy-text {
+  width: 40%; 
+}
+
+#philosophy-text > h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.philosophy-quote-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.philosophy-quote {
+  width: 350px;
+  margin: 3rem 2em;
+  opacity: 0.2;
+  transition: 0.4s;
+}
+
+.philosophy-quote:hover {
+  opacity: 1;
+}
+
+.philosophy-quote > h1 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.philosophy-quote > p {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .philosophy-container {
+    padding: 1rem 0;
+  }
+
+  #philosophy-video {
+    width: 40%;
+    margin-right: 2rem;
+  }
+
+  #philosophy-text {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #philosophy-video {
+    width: 100%;
+    margin: 0;
+  }
+
+  #philosophy-text {
+    width: 100%; 
+    margin: 2rem;
+  }
+
+}
