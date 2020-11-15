@@ -214,6 +214,7 @@ nav > div > a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .main-container > a {
@@ -222,9 +223,10 @@ nav > div > a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 
-.skew-left {transform: skewX(-30deg);}
+.skew-left {transform: skew(-30deg);}
 .skew-right {transform: skew(30deg);}
 
 .text-left {
@@ -252,10 +254,10 @@ nav > div > a {
   align-items: center;
 }
 
-.project-view {background-color: rgb(10, 59, 10);}
-.philosophy-view {background-color: rgb(35, 100, 35);}
-.journal-view {background-color: rgb(49, 134, 49);}
-.about-view {background-color: rgb(23, 88, 23);}
+.project-view {background-color: rgb(10, 59, 10); opacity: 0;}
+.philosophy-view {background-color: rgb(35, 100, 35); opacity: 0;}
+.journal-view {background-color: rgb(49, 134, 49); opacity: 0;}
+.about-view {background-color: rgb(23, 88, 23); opacity: 0;}
 
 @media only screen and (max-width: 1080px) {
 
@@ -601,6 +603,71 @@ nav > div > a {
 
   .journal-entry > img {
     margin: 0 0 3rem 0;
+  }
+
+}
+
+/*******************************
+              ABOUT 
+********************************/
+
+.about-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio > img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 5rem;
+}
+
+.bio > p {
+  text-align: center;
+  width: 70%;
+  margin: 2rem;
+  width: 400px;
+}
+
+.show-cv {display: none;}
+
+@media only screen and (max-width: 1600px) {
+
+.about-container {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .bio {
+    flex-direction: row;
+  }
+
+  .show-cv {
+    display: block;
+    display: flex;
+    height: 200px;
+    margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(23, 88, 23); */
+    color: rgb(100, 100, 100);
+    font-style: italic;
+    font-size: 2rem;
   }
 
 }
